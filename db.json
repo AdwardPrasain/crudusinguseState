@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "name": "dafasdf",
+      "phone": "dfa",
+      "website": "sadfdsfa",
+      "id": 1
+    },
+    {
+      "name": "Menuka",
+      "phone": "98770070",
+      "website": "dsfsdf.com",
+      "id": 2
+    },
+    {
+      "name": "Adhitya",
+      "phone": "Prasain",
+      "website": "adp.com.np",
+      "id": 3
+    },
+    {
+      "name": " Adward Prasain",
+      "phone": "3434334",
+      "website": "adad.com",
+      "id": 4
+    }
+  ]
+}
