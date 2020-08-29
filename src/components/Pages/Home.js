@@ -11,12 +11,12 @@ export const Home = () => {
     loadusers();
   }, []);
 
-  const loadusers = async () => {
+  const loadusers = () => {
     // simple step but better to use the below one
     // const result = await axios.get("http://localhost:3004/users");
     // setUsers(result.data);
 
-    await axios
+    axios
       .get("http://localhost:3004/users")
       .then((res) => {
         setloading(false);
@@ -31,8 +31,12 @@ export const Home = () => {
   };
 
   const del = async (id) => {
-    await axios.delete(`http://localhost:3004/users/${id}`);
-    loadusers();
+    try {
+      await axios.delete(`http://localhost:3004/users/${id}`);
+      loadusers();
+    } catch (e) {
+      console.log(e);
+    }
   };
 
   return (

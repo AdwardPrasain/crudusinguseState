@@ -18,11 +18,11 @@ export const EditUser = () => {
     load();
   }, []);
 
-  const load = async () => {
+  const load = () => {
     // const result = await Axios.get(`http://localhost:3004/users/${id}`);
     // setUser(result.data);
 
-    await Axios.get(`http://localhost:3004/users/${id}`)
+    Axios.get(`http://localhost:3004/users/${id}`)
       .then((res) => {
         setloading(false);
         setUser(res.data);
