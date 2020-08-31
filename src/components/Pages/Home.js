@@ -12,7 +12,7 @@ export const Home = () => {
   }, []);
 
   const loadusers = () => {
-    // simple step but better to use the below one
+    // simple step but better to use the below one but async should be added before the parenthesis i.e async ()
     // const result = await axios.get("http://localhost:3004/users");
     // setUsers(result.data);
 
